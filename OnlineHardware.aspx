@@ -1,0 +1,82 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OnlineHardware.aspx.cs" Inherits="OnlineHardware.OnlineHardware" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="2" align="center">
+                        <asp:Label ID="Label1" runat="server" Text="Online Hardware Store"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <asp:Label ID="Label2" runat="server" Text="Item ID:"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <asp:Label ID="Label3" runat="server" Text="Item Name:"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <asp:Label ID="Label4" runat="server" Text="Category:"></asp:Label>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="right">
+                        <asp:Label ID="Label5" runat="server" Text="Price:"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="right">
+                        <asp:Label ID="Label6" runat="server" Text="Quantity:"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <asp:Button ID="Button1" runat="server" Text="Add Item" OnClick="Button1_Click" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Delete" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
